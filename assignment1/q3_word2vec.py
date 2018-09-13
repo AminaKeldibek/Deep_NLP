@@ -8,7 +8,7 @@ from q2_sigmoid import sigmoid, sigmoid_grad
 def normalizeRows(x):
     """ Row normalization function """
     # Implement a function that normalizes each row of a matrix to have unit length
-    norm = np.linalg.norm(x, axis=1)
+    norm = np.linalg.norm(x, axis=1, keepdims = True)
     norm = norm.reshape((x.shape[0], 1))
 
     x = x / norm

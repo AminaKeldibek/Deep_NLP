@@ -19,8 +19,6 @@ def softmax(x):
     You must implement the optimization in problem 1(a) of the
     written assignment!
     """
-    if x.ndim == 1:
-        x = np.reshape(x, (1, x.shape[0]))
     x = x - np.amax(x, axis=x.ndim - 1, keepdims=True)
     x = np.exp(x)
     x = x / np.sum(x, axis=x.ndim - 1, keepdims=True)
