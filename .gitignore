@@ -1,1 +1,7 @@
+*.npy
 *.pyc
+*.txt
+*.pkl
+*.csv
+*.xslx
+stanford_CS224/assignment1/.env
