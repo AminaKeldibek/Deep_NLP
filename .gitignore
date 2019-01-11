@@ -8,3 +8,5 @@ stanford_CS224/assignment1/.env
 stanford_CS224/assignment2/data
 *.png
 *.DS_Store
+*.conll
+*.masked
